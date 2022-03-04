@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majic Notes APP</title>
+    <style>
+        body{
+            margin: auto;
+        }
+        .container {
+            margin: auto;
+        }
+
+        nav {
+            background-color: black;
+            margin-top: -16px;
+        }
+        nav ul{
+            padding: 10px 0px 10px 10px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+
+        }
+
+        #navItem1:after {
+            content: '|';
+            padding: 0px 2px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .mainHead {
+            text-align: center;
+
+        }
+
+        .head1 {
+            text-align: center;
+            margin: 0px;
+        }
+
+        h4 {
+            margin: 0px;
+        }
+
+        .addNoteCard {
+            text-align: center;
+        }
+
+        .card {
+            border: 1px solid black;
+            width: fit-content;
+            height: fit-content;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .noteCard {
+            border: 1px solid black;
+            width: 340px;
+            height: 170px;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .textNote {
+            border: 1px solid darkgray;
+            padding-bottom: 10px;
+        }
+
+        .notes {
+            margin: auto;
+            max-width: 1090px;
+            text-align: center;
+        }
+
+        p {
+            margin: 5px;
+            height: 100px;
+            text-align: justify;
+            overflow: auto;
+            padding: 0px 10px 10px 10px;
+        }
+
+        #addTxt {
+            margin: 5px;
+            padding: 0px 10px 10px 10px;
+            letter-spacing: justify;
+
+        }
+
+        #addBtn {
+
+            background-color: green;
+            margin-right: -500px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+
+        .deleteBtn {
+            margin-left: 275px;
+            background-color: red;
+            border-radius: 5px;
+        }
+
+        #searchDiv {
+            margin-right: 15px;
+            float: right;
+        }
+
+        #searchBox {
+            margin-right: 5px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" id="navItem1">Magic Notes</a></li>
+            <li><a href="#" id="home">Home</a></li>
+            <li id="searchDiv"><input type="search" name="searchField" id="searchBox" placeholder="Search here..."></li>
+            
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 class="mainHead">Welcome to Majic Notes App</h1>
+        <div class="addNoteCard">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="note-title"><input type="text" name="" id="note-title"
+                                placeholder="Add title here..."></h5>
+                            <div class="form-group">
+                                <textarea class="form-control" id="addTxt" cols="72" rows="5"
+                                    placeholder="Add your note here..."></textarea>
+                            </div>
+                            <button id="addBtn">Save</button>
+                    </div>
+                </div>
+        </div>
+        <div style="text-align: center;">
+            <button id="clrHistoryBtn">Delete All</button>
+        </div>
+        <div id="notes" class="notes">
+            <hr>
+            <h1 class="head1">Your Notes</h1>
+            <hr>
+            <h2></h2>
+        </div>
+        <!-- <script src="js/magicNotesApp1.js"></script> -->
+        <!-- <script src="js/magicNotesApp2.js"></script> -->
+        <script src="js/magicNotesApp3.js"></script>
+</body>
+
+</html>
